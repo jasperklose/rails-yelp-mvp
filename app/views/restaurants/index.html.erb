@@ -1,0 +1,10 @@
+  <div class="container">
+  <h1>All Restaurants:</h1>
+  <br>
+  <% @restaurants.each do |restaurant| %>
+    <%# <img src="https://picsum.photos/200" alt="restaurant-img"> %>
+    <h6><%= link_to restaurant.name, restaurant_path(restaurant), class: "restaurant-list-item" %></h6>
+  <% end %>
+  <br>
+  <%= link_to "Create new Restaurant", new_restaurant_path, class: "btn btn-primary"%>
+</div>

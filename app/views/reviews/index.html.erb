@@ -1,0 +1,7 @@
+  <div class="container">
+  <h1>All Reviews:</h1>
+  <br>
+  <% @reviews.each do |review| %>
+    <h6><%= link_to review.content, review_path(review) %></h6>
+  <% end %>
+</div>
